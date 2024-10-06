@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: fontTitlu;
+    src: url(BlowholeBB.otf)
+}
+
+body {
+    min-height: 100vh;
+}
+
+#list-container1 {
+    border: 1px solid black;
+    position: absolute;
+    height: 80vh;
+    top:5vh;
+}
+#list-container2 {
+    border: 1px solid black;
+    position: absolute;
+    height: 78vh;
+    top:7vh;
+}
+
+.flex-center {
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 0vw;
+    align-items: center;
+}
+
+.list-img {
+    height: 90vh;
+    top:0;
+    position: absolute;
+}
+
+.flip {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#titlu {
+    font-family: fontTitlu;
+    text-align: center;
+    color: rgb(255, 181, 23);
+    margin-top: 1.2vh;
+    -webkit-text-stroke: 1px black;
+            text-stroke: 1px black;
+    font-size: 3rem;
+}
+
+#foaia-1, #foaia-2 {
+    height: 90vh;
+    position: relative;
+}
+
+#pen {
+    width: 3vmax;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap:1.2vh
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: .5vw;
+    margin-left: .5vw;
+}
+ul li h2 {
+    margin-left: 2vmax;
+    padding: .4rem;
+    font-size: 15px;
+    background-color: orange;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    display: inline-block;
+}
+ul li::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    opacity: .7;
+    position: absolute;
+    background-image: url("clearcircle.png");
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked h2{
+    text-decoration: line-through !important;
+}
+ul li.checked::before {
+    background-image: url("fullcircle.png") !important;
+}
