@@ -12,7 +12,18 @@
 }
 
 body {
+    background-color: aliceblue;
     min-height: 100vh;
+}
+#next {
+    position: fixed;
+    right: 5vw;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+}
+#next:hover {
+    cursor: pointer;
 }
 #list-text {
     display: flex;
@@ -21,7 +32,7 @@ body {
     background-color: rgba(250, 235, 215, 0);
     border: 0px;    
     height: 5vh;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: orange;
     border-radius: 10px;
 }
@@ -29,14 +40,12 @@ body {
     outline: none;
 }
 #list-container1 {
-    border: 1px solid black;
     position: absolute;
     height: 80vh;
     top: 5vh;
 }
 
 #list-container2 {
-    border: 1px solid black;
     position: absolute;
     height: 78vh;
     top: 7vh;
@@ -69,7 +78,7 @@ body {
     margin-top: 1.2vh;
     -webkit-text-stroke: 1px black;
     text-stroke: 1px black;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 #foaia-1,
@@ -176,7 +185,7 @@ ul li.checked::before {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     border: 1px solid rgb(233, 174, 13);
     border-radius: 50%;
   }
